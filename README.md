@@ -9,10 +9,6 @@ To overcome Azure disk cross-region migration limitations, follow these steps:
 1. **Take a Snapshot of the Disk**  
    Identify the disk you want to migrate and create a snapshot of it.
 
-
-   ![image](https://github.com/user-attachments/assets/4d87190d-f976-451d-8ba0-3f442de875a1)
-
-
 3. **Copy the Snapshot to a Storage Account**  
    Transfer the snapshot to the desired storage account.
 
@@ -28,4 +24,13 @@ To overcome Azure disk cross-region migration limitations, follow these steps:
    - For the storage account.
 
 7. **Create a New Disk**  
-   Once the VHD file is in the storage account, proceed to create a new disk from it.
+   Once the VHD file is in the storage account, proceed to create a new disk from it.from below steps
+
+   8. go to to the create new disk option from azure portal
+   9. ![image](https://github.com/user-attachments/assets/c41cb831-60a1-46c8-b005-af201ef12776)
+   10. In the Disk Source section, select Storage Blob. This will display the option to browse storage accounts.
+   11. Choose the storage account where the VHD file (created from the snapshot) is stored.
+   12. The storage account can be located in any region.
+   13. Select the appropriate SKU and Disk Type based on your requirements to create the disk.
+
+   
